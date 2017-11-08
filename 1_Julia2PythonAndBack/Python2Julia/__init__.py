@@ -23,4 +23,5 @@ class CallingJulia():
 
     def callMeBack(self):
         print "[In Python] Calling Julia callback..."
-        self.juliaCallback()
+        a = 1
+        self.juliaCallback(a)
