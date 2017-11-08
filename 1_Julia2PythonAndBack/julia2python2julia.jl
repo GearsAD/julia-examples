@@ -1,6 +1,6 @@
 using PyCall
 # Change to local folder
-cd("/home/gears/julia-examples/1_Julia2PythonAndBack/"); # Might want to change this
+cd(dirname(@__FILE__); # Thanks Dehann for neat fix for Atom 
 unshift!(PyVector(pyimport("sys")["path"]), "")
 # A simple function that says hi from Julia
 function juliaSayHi()
